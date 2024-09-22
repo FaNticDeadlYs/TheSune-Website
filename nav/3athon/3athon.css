@@ -1,0 +1,153 @@
+.heading-3athon {
+    text-align: center;
+}
+
+#description {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#registration {
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  border-bottom: 2.5px solid #ffff;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: inherit;
+  font-weight: 700;
+  margin-left: 390px;
+  margin-top: -10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  width: 140px;
+  
+}
+
+#registration::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+
+#registration:hover::before {
+  left: 0;
+}
+
+#registration:hover {
+  color: var(--bg-color);
+}
+
+#registration::after {
+  content: '';
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    right: -10px;
+    bottom: -5px;
+    background-color: #2184a9;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+#registration:hover::after {
+  transform: scaleX(0);
+}
+
+#registration:hover {
+  color: #2184a9;
+  background-color: #c9e1f1;
+}
+
+
+.year-section {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.year-heading {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.year-description {
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.event {
+    background-color: #185c7566;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+.event-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.event-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.result-data {
+    font-size: 16px;
+    text-align: center;
+}
+
+.school {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .event {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

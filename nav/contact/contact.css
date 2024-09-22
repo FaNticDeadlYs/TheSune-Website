@@ -1,0 +1,135 @@
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading-contact {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    color: var(--text-color);
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex: 0 0 calc(33.333% - 20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.contact-position {
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    font-size: 14px;
+    color: var(--text-color);
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+.contact-email a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-email-button {
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+}
+
+.contact-email-button:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-icons a {
+    color: var(--text-color);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-icons a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.contact-icons a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-icons a:hover::after {
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+}
+
