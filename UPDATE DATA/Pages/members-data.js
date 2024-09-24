@@ -12,7 +12,7 @@ window.membersData = {
       {
         role: "Vice President",
         members: [
-            { name: "Neev Sahay", image: "../../UPDATE DATA/images/sune_members/Neev Sahay.jpeg", description: "2x2 3x3" },
+            { name: "Neev Sahay", image: "../../UPDATE DATA/images/vice presidents/vpresident2.jpeg", description: "2x2 3x3" },
             { name: "Ayushman Gupta", image: "../../UPDATE DATA/images/vice presidents/vpresident1.jpeg", description: "Sub 20s"}
                       
         ]
@@ -20,10 +20,11 @@ window.membersData = {
       {
         role: "Core Members",
         members: [
-          { name: "Aviansh Verma", image: "../../UPDATE DATA/images/core/Aviansh Verma.jpeg", description: "Coolz ppl"},
-          { name: "Sanyog Das", image: "../../UPDATE DATA/images/core/Sanyog Das.jpeg", description: "Real Prez" },
+          { name: "Aviansh Verma", image: "../../UPDATE DATA/images/core/aviansh.jpeg", description: "Coolz ppl"},
+          { name: "Sanyog Das", image: "../../UPDATE DATA/images/core/sanyog.jpeg", description: "Real Prez" },
           { name: "Ananya Kapoor", image: "../../UPDATE DATA/images/core/ananya.jpeg", description: "Girl Power" },
-          { name: "Ranvir Sawhney", image: "../../UPDATE DATA/images/core/ranvir.jpeg", description: "Cool ppl" }
+          { name: "Ranvir Sawhney", image: "../../UPDATE DATA/images/core/ranvir.jpeg", description: "Cool ppl" },
+          { name: "Atharv Gulati", image: "../../UPDATE DATA/images/core/atharv.jpeg", description: "Cracked 3x3"},
         ]
       }
     ],

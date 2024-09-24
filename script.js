@@ -99,3 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
     startSlideshow(); // Start the auto-advance when the page loads
 });
 
+const navToggle = document.querySelector('.mobile-nav-toggle');
+const nav = document.querySelector('.nav');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});

@@ -5,12 +5,13 @@
     <link rel="icon" href="assests/weblogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="Website for TheSune, the cubing club of DPS Vasant Kunj">
+    <meta name="description" content="The cubing club of DPS Vasant Kunj">
     <link rel="apple-touch-icon" href="assests/logo.png">
-    <link rel="manifest" href="/manifest.json">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="Expires" content="31536000">
     <title>TheSune</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css?v=1" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="use-credentials">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap">
@@ -18,6 +19,11 @@
 <body>
     <div id="root">
         <nav class="nav-container">
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav">
                 <div class="left-nav">
                     <li class="nav-item"><a href="nav/3athon/3athon.html">^3athon</a></li>
@@ -35,69 +41,72 @@
                 </div>
             </ul>
             <div class="logo">
-                <a href="index.html"><img src="assests/logo.png" alt="TheSune logo"></a>
+                <a href="index.html"><img src="assests/logo.png?v=1" alt="TheSune logo"></a>
             </div>
         </nav>
-        <div class="bg-img"></div>
-        <div>
-            <div class="top-part">
-                <div class="heading">(C U' B' E) (C O N2 E C T) (C O N Q U E R')</div>
-                <div class="about">
-                    "TheSune is the cubing club of DPS Vasant Kunj. We are blisteringly fast cubers ranging from 2x2 to pyramix."
-                </div>
-                <div class="main-buttons">
-                    <button class="btn learn-more"><a href="#history">Learn More</a></button>
-                    <button class="btn sune10"><a href="/^3athon">^3 athon</a></button>
-                </div>
-            </div>
-            <div class="history" id="history">
-                <div class="history-content">
-                    <div class="_history heading">How it Began</div>
-                    <div class="_history text">
-                        "In the beginning of the academic session 2022-23, Viraj Uday Singh (Class-11) and Akshit Gohain (Class-12) under the guidance of Ms. Gayatri Chowhan and Mr. Dushyant Sharma, proposed setting up a students' club to promote cubing, sharing the techniques of cubing among interested students and preparing for competitive cubing. The school administration, always receptive to student enrichment and development proposals, promptly approved the same. This laid the foundation of 'The Sune - The Cubing Club of DPS Vasant Kunj'. The Club received an overwhelming response and within a month of being setup, it had more than 100 members. These members interact through a dedicated Discord Server, hold regular meetings and, share their cubing skills."
+        <div class="main-content-container">
+            <div class="bg-img"></div>
+            <div>
+                <div class="top-part">
+                    <div class="heading">(C U' B' E) (C O N2 E C T) (C O N Q U E R')</div>
+                    <div class="about">
+                        "TheSune is the cubing club of DPS Vasant Kunj. We are blisteringly fast cubers ranging from 2x2 to pyramix."
+                    </div>
+                    <div class="main-buttons">
+                        <button class="btn learn-more"><a href="#history">Learn More</a></button>
+                        <button class="btn sune10"><a href="/^3athon">^3 athon</a></button>
                     </div>
                 </div>
-                <div class="slideshow-container">
-                    <div class="slides-wrapper">
-                        <div class="mySlides fade">
-                            <img src="assests/introduction/img1.png" alt="Slide 1">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assests/introduction/img2.png" alt="Slide 2">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assests/introduction/img3.png" alt="Slide 3">
+                <div class="history" id="history">
+                    <div class="history-content">
+                        <div class="_history heading">How it Began</div>
+                        <div class="_history text">
+                            "In the beginning of the academic session 2022-23, Viraj Uday Singh (Class-11) and Akshit Gohain (Class-12) under the guidance of Ms. Gayatri Chowhan and Mr. Dushyant Sharma, proposed setting up a students' club to promote cubing, sharing the techniques of cubing among interested students and preparing for competitive cubing. The school administration, always receptive to student enrichment and development proposals, promptly approved the same. This laid the foundation of 'The Sune - The Cubing Club of DPS Vasant Kunj'. The Club received an overwhelming response and within a month of being setup, it had more than 100 members. These members interact through a dedicated Discord Server, hold regular meetings and, share their cubing skills."
                         </div>
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="slideshow-container">
+                        <div class="slides-wrapper">
+                            <div class="mySlides fade">
+                                <img src="assests/introduction/img1.png?v=1" alt="Slide 1">
+                            </div>  
+                            <div class="mySlides fade">
+                                <img src="assests/introduction/img2.png?v=1" alt="Slide 2">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assests/introduction/img3.png?v=1" alt="Slide 3">
+                            </div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                
+                <div class="discord">
+                    <div class="discord-content">
+                        <div class="_discord heading">Join Our Discord</div>
+                        <div class="_discord text">
+                            "Join our discord server to get notified about upcoming events. We also help and assist dipsites interested in the fields of expertise covered by our club."
+                        </div>
+                        <button class="_discord btn">
+                            <a href="https://discord.com/vhqdp5DSCw" target="https://discord.gg/vhqdp5DSCw" rel="noreferrer">Join Discord</a>
+                        </button>
+                    </div>
+                    <div class="discord-embed">
+                        <iframe 
+                            title="TheSune Discord" 
+                            src="https://discord.com/widget?id=939573906535223326&theme=dark" 
+                            width="350" 
+                            height="500" 
+                            allowtransparency="true" 
+                            frameborder="0" 
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                        </iframe>
+                    </div>
                 </div>
             </div>
             
-            <div class="discord">
-                <div class="discord-content">
-                    <div class="_discord heading">Join Our Discord</div>
-                    <div class="_discord text">
-                        "Join our discord server to get notified about upcoming events. We also help and assist dipsites interested in the fields of expertise covered by our club."
-                    </div>
-                    <button class="_discord btn">
-                        <a href="https://discord.com/vhqdp5DSCw" target="https://discord.gg/vhqdp5DSCw" rel="noreferrer">Join Discord</a>
-                    </button>
-                </div>
-                <div class="discord-embed">
-                    <iframe 
-                        title="TheSune Discord" 
-                        src="https://discord.com/widget?id=939573906535223326&theme=dark" 
-                        width="350" 
-                        height="500" 
-                        allowtransparency="true" 
-                        frameborder="0" 
-                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-                    </iframe>
-                </div>
-            </div>
         </div>
     </div>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js?v=1"></script>
 </body>
 </html>

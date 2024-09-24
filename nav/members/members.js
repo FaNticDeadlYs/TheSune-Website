@@ -63,44 +63,62 @@ const membersData = window.membersData;
   });
     document.addEventListener('DOMContentLoaded', function() {
 
-        const alumniContainer = document.getElementById('alumni-container');
+            const alumniContainer = document.getElementById('alumni-container');
 
-        membersData.alumni.forEach(yearGroup => {
-            const yearSection = document.createElement('section');
-            yearSection.className = 'year-section';
+            membersData.alumni.forEach(yearGroup => {
+                const yearSection = document.createElement('section');
+                yearSection.className = 'year-section';
         
-            const yearHeading = document.createElement('h2');
-            yearHeading.className = 'year-heading';
-            yearHeading.textContent = yearGroup.year;
-            yearSection.appendChild(yearHeading);
+                const yearHeading = document.createElement('h2');
+                yearHeading.className = 'year-heading';
+                yearHeading.textContent = yearGroup.year;
+                yearSection.appendChild(yearHeading);
 
-            const membersContainer = document.createElement('div');
-            membersContainer.className = 'members-container';
+                const membersContainer = document.createElement('div');
+                membersContainer.className = 'members-container';
 
-            yearGroup.members.forEach(member => {
-                const memberDiv = document.createElement('div');
-                memberDiv.className = 'member';
+                yearGroup.members.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.className = 'member';
   
-                const memberImg = document.createElement('img');
-                memberImg.className = 'member-img';
-                memberImg.src = member.image;
-                memberImg.alt = member.name;
-                memberDiv.appendChild(memberImg);
+                    const memberImg = document.createElement('img');
+                    memberImg.className = 'member-img';
+                    memberImg.src = member.image;
+                    memberImg.alt = member.name;
+                    memberDiv.appendChild(memberImg);
 
-                const memberName = document.createElement('div');
-                memberName.className = 'member-name';
-                memberName.textContent = member.name;
-                memberDiv.appendChild(memberName);
+                    const memberName = document.createElement('div');
+                    memberName.className = 'member-name';
+                    memberName.textContent = member.name;
+                    memberDiv.appendChild(memberName);
 
-                const memberDescription = document.createElement('div');
-                memberDescription.className = 'member-description';
-                memberDescription.textContent = member.description;
-                memberDiv.appendChild(memberDescription);
+                    const memberDescription = document.createElement('div');
+                    memberDescription.className = 'member-description';
+                    memberDescription.textContent = member.description;
+                    memberDiv.appendChild(memberDescription);
 
-                membersContainer.appendChild(memberDiv);
+                    membersContainer.appendChild(memberDiv);
+                });
+
+                yearSection.appendChild(membersContainer);
+                alumniContainer.appendChild(yearSection);
             });
 
-            yearSection.appendChild(membersContainer);
-            alumniContainer.appendChild(yearSection);
-        });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('show-description');
+                            }, 300); // 300ms delay
+                        } else {
+                            entry.target.classList.remove('show-description');
+                        }
+                    });
+                }, { threshold: 0.2 });
+            
+                document.querySelectorAll('.member-description').forEach(desc => {
+                    observer.observe(desc);
+                });
+            }
     });

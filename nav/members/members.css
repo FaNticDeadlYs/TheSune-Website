@@ -12,10 +12,74 @@
 
 #description {
     text-align: center;
+    font-weight: bold;
     margin-bottom: 3rem;
     font-size: 1.1rem;
     color: var(--text-color-secondary);
 }
+
+.heading-members {
+  font-size: 70px;
+  margin-bottom: 250px;
+  margin-top: 250px;
+  text-align: center
+}
+
+.presidents {
+  margin-top: 400px
+}
+
+.person-pfp {
+  background: var(--pfp-img) center/cover!important
+}
+
+.person-name {
+  margin-top: 10px
+}
+
+.heading-alumni {
+  font-size: 70px;
+  margin-top: 100px;
+  text-align: center
+}
+
+.alumnus-container:nth-child(2) h1 {
+  margin-top: 100px!important
+}
+
+.subheading {
+  font-size: 50px;
+  margin-top: 100px;
+  text-align: center
+}
+
+.role-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px
+}
+
+.role {
+  padding: 20px
+}
+
+.person-pfp {
+  background: var(--pfp-img);
+  background-color: var(--text-color);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px
+}
+
+.person-name {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center
+}
+
 
 .role-section, .year-section {
     margin-bottom: 3rem;
@@ -89,7 +153,8 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent-color);
-    transition: border-color 0.3s ease;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .member:hover .member-img {
@@ -122,17 +187,253 @@
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    .mobile-nav-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav {
+        position: fixed;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease;
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-nav, .right-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .heading-members {
+        font-size: 70px;
+        margin-top: 470px;
+        margin-bottom: 100px;
+    }
+
+    .role-section, .year-section {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 1.5rem;
+    }
+
     .members-container {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .member {
-        flex-basis: 150px;
+        flex: 0 1 150px;
     }
 
     .member-img {
         width: 120px;
         height: 120px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mobile-nav-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav {
+        position: fixed;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease;
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-nav, .right-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .heading-members {
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .role-section, .year-section {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 1.5rem;
+    }
+
+    .members-container {
+        gap: 1rem;
+    }
+
+    .member {
+        flex: 0 1 150px;
+    }
+
+    .member-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mobile-nav-toggle {
+      display: block;
+      position: fixed;
+      
+      top: 20px;
+      right: 20px;
+      }
+  
+      .nav {
+        position: fixed;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease;
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+  
+    .nav.active {
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-nav {
+      order: 1;
+      margin-bottom: 120px;
+    }
+  
+    .right-nav {
+      order: 2;
+    }
+  
+    .left-nav, .right-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+  
+    .nav-item {
+        margin: 30px 0;
+        text-align: center;
+    }
+  
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    .left-nav, .right-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .btn {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  
+.show-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 800px) {
+    .member-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .member-description {
+        font-size: 12px;
     }
 }
