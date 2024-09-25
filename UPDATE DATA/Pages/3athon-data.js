@@ -3,6 +3,36 @@ const athonData = {
   description: ["The annual cubing competition, ^3ation, a thrilling event gathers speedcubers from all around to showcase their skills in solving various twisty puzzles. Whether you're a seasoned competitor or just a fan of the cube, enjoy a day filled with fast solves, exciting challenges, and a vibrant community. Experience incredible talents, connect with fellow cubers, and celebrate the art of cubing. Don’t miss out on the fun—mark your calendars!"],
   events: [
     {
+      year: 2023,
+      yearDescription: "The second inter-school 3x3 and 2x2 cubing competition of The Sune was organized in collaboration with the school's technology club – Code Warriors. The event was held in two phases, The Online Prelims and The Offline Finals. The event consisted of 3 categories namely, 2x2, 3x3 and x³. The event was a massive success and saw participation of various prominent schools of Delhi. The results of the event were as follows:",
+      competitions: [
+        {
+          name: "3x3 Speedsolve",
+          winners: [
+            { name: "Ronit Arora", school: "Rukmini Devi Public School" },
+            { name: "Nikhil Lal", school: "Delhi Public School, R.K. Puram" },
+            { name: "Rehan Mongia", school: "Air Force Bal Bharti School" }
+          ]
+        },
+        {
+          name: "2x2 Speedsolve",
+          winners: [
+            { name: "Garv Jhuremalani", school: "Delhi Public School, R.K. Puram" },
+            { name: "Pranav Chandra", school: "Delhi Public School, Mathura Road" },
+            { name: "Rehan Mongia", school: "Airforce Bal Bharti School" },
+          ]
+        },
+        {
+          name: "Cubathon x³ (team event)",
+          winners: [
+            { name: "Nikhil Lal and Garv Jhuremalani ", school: "Delhi Public School, R.K. Puram" },
+            { name: "Prisha Bhatia and Arush Kashyap", school: "Amity International Sector 46)" },
+            { name: "Rehan Mongia and Nakshastra Aggarwal", school: "Air Force Bal Bharti School" }
+          ]
+        }
+      ]
+    },
+    {
       year: 2022,
       yearDescription: "The first inter-school 3x3 and 2x2 cubing competition of TheSune was organized in collaboration with the school tech club – Code Warriors. The event was held in two parts : The Online Prelims and The Offline Finals. This event was a huge success and saw participation of most major schools of Delhi.",
       competitions: [
@@ -22,57 +52,7 @@ const athonData = {
             { name: "Pranav Chandra", school: "Delhi Public School, Mathura Road" }
           ]
         },
-        {
-          name: "2x2 Speedsolve",
-          winners: [
-            { name: "Garv Jhuremalani", school: "Delhi Public School, R.K. Puram" },
-            { name: "Rehan Mongia", school: "Airforce Bal Bharti School" },
-            { name: "Pranav Chandra", school: "Delhi Public School, Mathura Road" }
-          ]
-        }
       ]
     },
-    {
-      year: 2021,
-      competitions: [
-        {
-          name: "3x3 Speedsolve",
-          winners: [
-            { name: "John Doe", school: "Delhi Public School, Noida" },
-            { name: "Jane Smith", school: "Amity International School" },
-            { name: "Bob Johnson", school: "Modern School, Barakhamba Road" }
-          ]
-        },
-        {
-          name: "2x2 Speedsolve",
-          winners: [
-            { name: "Alice Brown", school: "Delhi Public School, Vasant Kunj" },
-            { name: "Charlie Davis", school: "The Mother's International School" },
-            { name: "Eve Wilson", school: "Sanskriti School" }
-          ]
-        }
-      ]
-    },
-    {
-      year: 2020,
-      competitions: [
-        {
-          name: "3x3 Speedsolve",
-          winners: [
-            { name: "Frank Thomas", school: "Delhi Public School, Mathura Road" },
-            { name: "Grace Lee", school: "Springdales School, Pusa Road" },
-            { name: "Henry Ford", school: "St. Columba's School" }
-          ]
-        },
-        {
-          name: "2x2 Speedsolve",
-          winners: [
-            { name: "Ivy Chen", school: "Tagore International School" },
-            { name: "Jack Robinson", school: "Delhi Public School, Dwarka" },
-            { name: "Kate Miller", school: "Bluebells School International" }
-          ]
-        }
-      ]
-    }
   ]
 };
