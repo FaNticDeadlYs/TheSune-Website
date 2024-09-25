@@ -2,7 +2,7 @@ const archiveData = [
     {
         date: "Wednesday, September 25, 2024",
         heading: "Website For the club",
-        description: "A Website has been set-up to show our and preserve our achivements and past histroy, showcasing victories and talented members of the club. Website will be update every year with new achivements and new recruits. Also Announcing the ^3athon events held every year and winners who earn the title.",
+        description: "A Website has to show and preserve our achivements and past histroy, showcasing victories and talented members of the club. Website will be update every year with new achivements and new recruits. Also Announcing the ^3athon events held every year and winners who earn the title.",
     },
     {
         date: "Thursday, July 13, 2023",
