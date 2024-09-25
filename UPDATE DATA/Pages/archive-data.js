@@ -1,5 +1,10 @@
 const archiveData = [
     {
+        date: "Wednesday, September 25, 2024",
+        heading: "Website For the club",
+        description: "A Website has been set-up to show our and preserve our achivements and past histroy, showcasing victories and talented members of the club. Website will be update every year with new achivements and new recruits. Also Announcing the ^3athon events held every year and winners who earn the title.",
+    },
+    {
         date: "Thursday, July 13, 2023",
         heading: "Rubik's Cube Workshop",
         description: "A Rubik's Cube workshop on Thursday, 13th July 2023, for class 4th and 5th. The event took place during the 4th and 5th periods in the mini auditorium and recieved a participation of over 80 students. The workshop began with an engaging PowerPoint presentation that explained the basics of the Rubik's Cube and its history. The students were introduced to the fundamentals of the colourful puzzle igniting their curiosity. The hands-on experience provided during the workshop helped students to get down the basics of the Rubik's Cube with guidance from club members.",
