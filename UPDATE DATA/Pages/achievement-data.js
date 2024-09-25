@@ -36,17 +36,3 @@ const achievementData = [
     },
     
 ];
-
-```
-    {
-        date: "",
-        heading: "",
-        description: "",
-        image: "",
-        names: [
-            "",
-            "",
-            ""
-        ]
-    },
-```

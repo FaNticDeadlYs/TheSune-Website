@@ -58,17 +58,3 @@ const archiveData = [
         ]
     },
 ];
-
-```
-    {
-        date: "",
-        heading: "",
-        description: "",
-        image: "",
-        names: [
-            "",
-            "",
-            ""
-        ]
-    },
-```

@@ -6,7 +6,7 @@ window.membersData = {
         role: "President",
         members: [
           { name: "Soumil Sahu", image: "../../UPDATE DATA/images/presidents/president1.jpeg", description: "All  Rounder" },
-            { name: "Samanyu Naik", image: "../../UPDATE DATA/images/presidents/president2.jpeg", description: "Fastest 3x3" }
+            { name: "Samanyu Naik", image: "../../UPDATE DATA/images/presidents/president2.jpeg", description: "Cracked 3x3" }
         ]
       },
       {
@@ -24,7 +24,7 @@ window.membersData = {
           { name: "Sanyog Das", image: "../../UPDATE DATA/images/core/sanyog.jpeg", description: "Real Prez" },
           { name: "Ananya Kapoor", image: "../../UPDATE DATA/images/core/ananya.jpeg", description: "Girl Power" },
           { name: "Ranvir Sawhney", image: "../../UPDATE DATA/images/core/ranvir.jpeg", description: "Cool ppl" },
-          { name: "Atharv Gulati", image: "../../UPDATE DATA/images/core/atharv.jpeg", description: "Cracked 3x3"},
+          { name: "Atharv Gulati", image: "../../UPDATE DATA/images/core/atharv.jpeg", description: "Fastest 3x3"},
         ]
       }
     ],

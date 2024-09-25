@@ -33,14 +33,3 @@ const contactData = [
     },
     // Add more contact objects as needed
 ];
-
-```
-    {
-        name: "",
-        position: "",
-        email: "",
-        discordId: "",
-        instagramLink: "",
-        phoneNo: ""
-    },
-```
