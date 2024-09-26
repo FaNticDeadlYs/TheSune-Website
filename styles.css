@@ -495,7 +495,7 @@ html {
     width: 80%;
     max-width: 1000px;
     height: 500px;
-    margin: 50px auto;
+    margin: 10px auto;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -720,8 +720,8 @@ html {
   }
 
   .slideshow-container {
-    width: 280px;
-    height: 200px;
+    width: 250px;
+    height: 170px;
   }
   
   .prev, .next {
