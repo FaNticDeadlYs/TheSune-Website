@@ -326,7 +326,8 @@ a {
 
 
 ._history.heading {
-  text-align: center
+  text-align: center;
+  font-weight: bold;
 }
 
 .text {
@@ -360,6 +361,7 @@ a {
 
 ._discord.heading {
   font-size: 36px;
+  font-weight: bold;
   margin-bottom: 20px;
   color: var(--text-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -704,6 +706,7 @@ html {
   .history {
     margin: 50px 10px;
     padding: 30px;
+    padding-bottom: 70px;
     height: 600px;
   }
 
