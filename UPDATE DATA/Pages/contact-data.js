@@ -5,7 +5,7 @@ const contactData = [
         phoneNo: "+91 98710 33056"
     },
     {
-        name: "Dyshant Sir",
+        name: "Dushyant Sir",
         position: "Teacher Incharge",
         phoneNo: "+91 78279 78848"
     },
