@@ -7,7 +7,8 @@ const contactData = [
     {
         name: "Dushyant Sir",
         position: "Teacher Incharge",
-        phoneNo: "+91 78279 78848"
+        phoneNo: "+91 78279 78848",
+        email: "sharma.dushyant@dpsvasantkunj.com"
     },
     {
         name: "Sanyog Das",
