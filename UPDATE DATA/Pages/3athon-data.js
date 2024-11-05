@@ -3,7 +3,7 @@ const athonData = {
   description: ["The annual cubing competition, ^3ation, a thrilling event gathers speedcubers from all around to showcase their skills in solving various twisty puzzles. Whether you're a seasoned competitor or just a fan of the cube, enjoy a day filled with fast solves, exciting challenges, and a vibrant community. Experience incredible talents, connect with fellow cubers, and celebrate the art of cubing. Don’t miss out on the fun—mark your calendars!"],
   events: [
     {
-      year: 2022,
+      year: 2024,
       yearDescription: "The thrid inter-school 3x3 and 2x2 cubing competition of The Sune was organized in collaboration with the school's tech club – Code Warriors. The event was held in two phases, The Online Prelims and The Offline Finals. The event consisted of 2 categories namely, 2x2 and 3x3. The event was a massive success and saw participation of various prominent schools of Delhi. The results of the event were as follows:",
       competitions: [
         {
